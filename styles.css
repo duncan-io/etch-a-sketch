@@ -1,0 +1,6 @@
+.etchArea {
+    display: grid;
+}
+.gridElement :hover {
+    background-color: black;
+}
