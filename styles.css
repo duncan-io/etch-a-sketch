@@ -11,7 +11,3 @@
     border: 2px solid rgb(243, 243, 243);
     color: black;
 }
-
-.gridElement:hover{
-    background-color: black;
-}

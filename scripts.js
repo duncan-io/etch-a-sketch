@@ -1,7 +1,7 @@
 
 const etchArea = document.getElementById("etchArea");
 
-
+//Player amount of squares selection variable. Still no way for the player to decide on number of squares
 let playerProvidedSquares = 16
 //Figure out how many squares will be used
 let numSquares = Math.pow(playerProvidedSquares, 2);
@@ -20,6 +20,9 @@ etchArea.appendChild(newGridItem);
 }
 
 
+//Select all grid elements and add a mouseover event to them that changes their CSS class
+
+document.querySelectorAll(".gridElement").forEach(item => {item.addEventListener("mouseover", (event) => {event.target.style.backgroundColor = "black"})})
 
 
 
