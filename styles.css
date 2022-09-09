@@ -1,13 +1,72 @@
-.etchArea {
-    display: grid;
-    /* grid-template-columns: repeat(16, 100px); */
-    /* grid-auto-rows: minmax(50px, auto); */
-    width: 50vw;
-    grid-gap:0px;
-    border: 5px solid black;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+.mainLogo {
+    font-family: 'Leckerli One', cursive;
+    color: rgb(255, 255, 26);
+    text-shadow: 2px 2px blue;
+}
+
+.dialLeft, .dialRight {
+    background-color: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px lightgrey;
+    
+}
+
+.bottomEtch {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "sidebar main main"
+    "footer footer footer"
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.sideBar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.etchEdges {
+    grid-area: main;
+    text-align: center;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.etchArea {
+    background-color: white;
+    display: grid;
+    border: 5px solid black;
+    width: 100%;
+    height: 80%;
+}
+
 .gridElement {
     background-color: white;
-    border: 2px solid rgb(243, 243, 243);
+    /* border: 2px solid rgb(243, 243, 243); */
     color: black;
+    height: auto;
+    width: auto;
 }

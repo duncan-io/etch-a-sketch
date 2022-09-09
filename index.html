@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
     <script defer src="scripts.js"></script>
-    <title>Etch-a-Sketch Project</title>
+    <title>Etch-A-Sketch Project</title>
 </head>
 <body>
-    <h1>Etch-a-Sketch</h1>
-    <div class="etchArea" id="etchArea">
+    
+    <div class="wrapper">
+        <div class="header">
+            <h1>Etch-A-Sketch</h1>
+            <h2>Pick your the amount of squares you want to draw on and get sketching!</h2>
+        </div>
+
+        <div class="sideBar">
+            <button>Black</button>
+            <button>Colors</button>
+            <div class="slidecontainer">
+                <input type="range" min="16x16" max="100x100" value="50" class="slider" id="myRange">
+            </div>
+            <button>Clear</button>
+        </div>
+        
+        <div class="etchEdges">
+            <div class="etchArea" id="etchArea">
+            </div>
+            <div class="bottomEtch">
+            <div class="dialLeft"></div>
+            <h1 class="mainLogo">Etch-A-Sketch</h1>
+            <div class="dialRight"></div>
+        </div>
+        </div>
     </div>
   
 </body>
