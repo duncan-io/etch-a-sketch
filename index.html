@@ -18,24 +18,28 @@
             <h1>Etch-A-Sketch</h1>
             <h2>Pick your the amount of squares you want to draw on and get sketching!</h2>
         </div>
-
-        <div class="sideBar">
-            <button>Black</button>
-            <button>Colors</button>
-            <div class="slidecontainer">
-                <input type="range" min="16x16" max="100x100" value="50" class="slider" id="myRange">
+        <div class="main">
+            <div class="sideBar">
+                <h2>Etch Settings</h2>
+                <button>Black</button>
+                <input type="color" name="pickColor">
+                <label for="pickColor">Pick A Custom Color</label>
+                <button>Colors</button>
+                <div class="slidecontainer">
+                    <input type="range" min="16x16" max="100x100" value="50" class="slider" id="myRange">
+                </div>
+                <button>Clear</button>
             </div>
-            <button>Clear</button>
-        </div>
-        
-        <div class="etchEdges">
-            <div class="etchArea" id="etchArea">
+            
+            <div class="etchEdges">
+                <div class="etchArea" id="etchArea">
+                </div>
+                <div class="bottomEtch">
+                    <div class="dialLeft"></div>
+                    <h1 class="mainLogo">Etch - A - Sketch</h1>
+                    <div class="dialRight"></div>
+                </div>
             </div>
-            <div class="bottomEtch">
-            <div class="dialLeft"></div>
-            <h1 class="mainLogo">Etch-A-Sketch</h1>
-            <div class="dialRight"></div>
-        </div>
         </div>
     </div>
   

@@ -3,6 +3,60 @@
     padding: 0;
 }
 
+body {
+    background-color: lightgrey;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    margin: 20px;
+    height: 50px;
+}
+
+
+
+/* Etch-A-Sketch Area */
+
+.etchEdges {
+    flex-grow: 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 700px;
+}
+
+.etchArea {
+    background-color: white;
+    display: grid;
+    border: 5px solid black;
+    width: 500px;
+    height:500px;
+    border-radius: 5px;
+}
+
+.gridElement {
+    background-color: white;
+    color: black;
+}
+
 .mainLogo {
     font-family: 'Leckerli One', cursive;
     color: rgb(255, 255, 26);
@@ -19,54 +73,32 @@
 }
 
 .bottomEtch {
+    text-align: center;
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     padding-top: 20px;
 }
 
-.wrapper{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "sidebar main main"
-    "sidebar main main"
-    "footer footer footer"
-}
+/* Sidebar */
 
-.header {
-    grid-area: header;
-    text-align: center;
-}
 
-.sideBar{
-    grid-area: sidebar;
+.sideBar {
+    background-color: rgb(163, 163, 163);
+    height: 80%;
+    border-radius: 5px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    text-align: center;
-}
-
-.etchEdges {
-    grid-area: main;
-    text-align: center;
-    background-color: red;
+    align-items: center;
+    gap: 50px;
+    margin: 20px;
     padding: 20px;
-    border-radius: 10px;
-    width: 90%;
+    max-width: 300px;
 }
-
-.etchArea {
-    background-color: white;
-    display: grid;
-    border: 5px solid black;
-    width: 100%;
-    height: 80%;
-}
-
-.gridElement {
-    background-color: white;
-    /* border: 2px solid rgb(243, 243, 243); */
-    color: black;
-    height: auto;
-    width: auto;
+.sideBar button {
+    width: 100px;
+    border-radius: 5px;
+    border: 0px;
 }
