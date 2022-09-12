@@ -3,8 +3,7 @@ const etchArea = document.getElementById("etchArea");
 
 //Player amount of squares selection variable. 
 //**Still no way for the player to decide on number of squares**
-let playerProvidedSquares = 100
-
+let playerProvidedSquares = document.getElementById("densityInputId").value
 //Figure out how many squares will be used
 let numSquares = Math.pow(playerProvidedSquares, 2);
 
@@ -20,12 +19,16 @@ etchArea.appendChild(newGridItem);
 }
 
 
-//Select all grid elements
+//Select all grid elements and add a mouseover event to them that changes their CSS class
 const gridElement = document.querySelectorAll(".gridElement")
-
-//Add a mouseover event to them that changes their CSS class
 gridElement.forEach(element => {element.addEventListener("mouseover", (event) => {event.target.style.backgroundColor = "black"})});
 
 
+//Clear Button
+const clearBtn = document.getElementById("clearBtn");
+function clearOut () {
+    gridElement.forEach(element => element.style.backgroundColor="white")
+}
+clearBtn.addEventListener("click", clearOut)
 
 

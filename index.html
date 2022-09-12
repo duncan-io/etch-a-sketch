@@ -18,30 +18,31 @@
     <div class="wrapper">
       <div class="header">
         <h1>Etch-A-Sketch</h1>
-        <h2>Pick your the amount of squares you want to draw on and get sketching!</h2>
+        <h2>
+          Pick your the amount of squares you want to draw on and get sketching!
+        </h2>
       </div>
       <div class="main">
         <div class="sideBar">
           <h2>Etch Settings</h2>
           <div>
-            <input type="color" name="pickColor" />
+            <input type="color" name="pickColor" /> <br />
             <label for="pickColor">Pick A Custom Color</label>
           </div>
           <button class="randomColors">Random Colors</button>
-          <div class="slidecontainer">
-            <input
-              type="range"
-              name="densityInput"
-              id="densityInput"
-              min="1"
-              max="100"
-              value="24"
-              class="slider"
-              oninput="desnityOutputName.value = densityOutputId.value"  
+          <form name="densitySelector">
+            <input 
+            type="range" 
+            name="densityInputName" 
+            id="densityInputId" 
+            value="50" 
+            min="1" 
+            max="100" 
+            oninput="densityOutputId.value = densityInputId.value"
             >
-            <ouput name="densityOuputName" id="densityOutputId">24</ouput>
-          </div>
-          <button class="clear">Clear</button>
+            <output name="densityOutputName" id="densityOutputId">50</output>
+        </form>
+          <button class="clear" id="clearBtn">Clear</button>
         </div>
 
         <div class="etchEdges">
