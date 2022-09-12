@@ -25,23 +25,11 @@
       <div class="main">
         <div class="sideBar">
           <h2>Etch Settings</h2>
+          <button id="newDensityBtn">Pick New Density</button>
           <div>
-            <input type="color" name="pickColor" /> <br />
+            <input type="color" name="pickColor" id="pickColor" /> <br />
             <label for="pickColor">Pick A Custom Color</label>
           </div>
-          <button class="randomColors">Random Colors</button>
-          <form name="densitySelector">
-            <input 
-            type="range" 
-            name="densityInputName" 
-            id="densityInputId" 
-            value="50" 
-            min="1" 
-            max="100" 
-            oninput="densityOutputId.value = densityInputId.value"
-            >
-            <output name="densityOutputName" id="densityOutputId">50</output>
-        </form>
           <button class="clear" id="clearBtn">Clear</button>
         </div>
 
